@@ -1,0 +1,8 @@
+BII Upscalator — using BII news URL; prefer stable programme page if you have one
+BII AI Lab — NOT added (no solid public programme URL found; only mentioned in PPT)
+BII Venture House — NOT added as separate row (follow-on to Venture Lab; confirm if you want it)
+Scaleup Europe Fund — NOT added (equity / EIC Fund investment vehicle; VC-adjacent)
+Dansk Industris Fonde og legater (Alexander Foss etc.) — NOT added as separate rows; Industriens Fond added instead
+Other EIFO loan/guarantee schemes (Ukraine/Africa etc.) — NOT added (not researcher journey)
+GINP — added but marked as ending 2025 / successor via IFD
+EUopSTART — added; confirm whether KU researchers/institutions are eligible under current UFSN wording
