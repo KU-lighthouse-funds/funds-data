@@ -1,0 +1,43 @@
+# The live site is its own repo (funds-overview-site/ → GitHub Pages).
+funds-overview-site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Scratch / local only
+_brand/
+*.png
+_ppt_extract.txt
+_ppt_clean.txt
+_ppt_programmes.json
+link_check_*.json
+COMMIT_MSG.tmp
+chk-*.png
+v-*.png
+shot-*.png
+ours-*.png
+
+# Old CSV/XLSX versions — keep locally if you need them; v4 is canonical in git
+funds with KU support - v1.*
+funds with KU support - v2.*
+funds with KU support - v3.*
+updated file without VC*
+funds-table.html
+
+# One-off migration scripts (historical; not part of the active pipeline)
+apply_*.py
+build_funds_v3.py
+build_ku_support*.py
+check_links*.py
+clean_deadlines_in_more_info.py
+consolidate_stage_cvr.py
+enrich_quick_info.py
+export_table.py
+fix_open_entrepreneurship.py
+parse_ppt_tables.py
+remap_cvr_vocabulary.py
+split_*.py
+update_*.py
