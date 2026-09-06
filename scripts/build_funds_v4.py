@@ -20,10 +20,10 @@ from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
-BASE = Path(__file__).resolve().parent
-SRC = BASE / "funds with KU support - v3.csv"
-OUT_CSV = BASE / "funds with KU support - v4.csv"
-OUT_XLSX = BASE / "funds with KU support - v4.xlsx"
+REPO = Path(__file__).resolve().parent.parent
+SRC = REPO / "old data" / "funds with KU support - v3.csv"
+OUT_CSV = REPO / "funds with KU support - v4.csv"
+OUT_XLSX = REPO / "funds with KU support - v4.xlsx"
 
 EMAIL_COL = "KU contact email"
 

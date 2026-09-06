@@ -4,7 +4,7 @@ import csv
 from collections import Counter
 from pathlib import Path
 
-CSV_PATH = Path(__file__).resolve().parent / "funds with KU support - v4.csv"
+CSV_PATH = Path(__file__).resolve().parent.parent / "funds with KU support - v4.csv"
 
 STAGE_BY_NAME = {
     # —— All stages (events, awards, networks, cross-cutting schemes) ——

@@ -4,8 +4,9 @@ from zipfile import ZipFile
 import html as html_lib
 import re
 
-pptx = Path(r"C:\Users\Kaja\Documents\Funds\KU LH preaward funding support-AZ-JSJ.pptx")
-out = Path(r"C:\Users\Kaja\Documents\Funds\_ppt_extract.txt")
+REPO = Path(__file__).resolve().parent.parent
+pptx = REPO / "old data" / "KU LH preaward funding support-AZ-JSJ.pptx"
+out = REPO / "old data" / "_ppt_extract.txt"
 
 parts = []
 with ZipFile(pptx) as z:

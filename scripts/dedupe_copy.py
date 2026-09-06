@@ -3,7 +3,7 @@ import csv
 import re
 from pathlib import Path
 
-SRC = Path(__file__).resolve().parent / "funds with KU support - v4.csv"
+SRC = Path(__file__).resolve().parent.parent / "funds with KU support - v4.csv"
 FIELDS = ("Quick info", "Criteria")
 
 

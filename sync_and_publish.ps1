@@ -8,6 +8,6 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 Write-Host ""
 Write-Host "Next steps:" -ForegroundColor Green
-Write-Host "  1. Commit here (data repo):  funds with KU support - v4.csv + any script changes"
+Write-Host "  1. Commit here (data repo):  funds with KU support - v4.csv (+ scripts/ if changed)"
 Write-Host "  2. Commit site repo:         cd funds-overview-site; git add data/programmes.json; git commit; git push"
 Write-Host "     Live site: https://ku-lighthouse-funds.github.io/funds-overview/"

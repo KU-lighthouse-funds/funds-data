@@ -3,7 +3,7 @@
 import csv
 from pathlib import Path
 
-CSV_PATH = Path(__file__).resolve().parent / "funds with KU support - v4.csv"
+CSV_PATH = Path(__file__).resolve().parent.parent / "funds with KU support - v4.csv"
 
 CANONICAL_ORDER = [
     "General",

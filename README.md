@@ -1,34 +1,41 @@
-# KU Lighthouse — Funding data & build
+# KU Lighthouse — Funding data
 
-This folder holds the **source dataset** and scripts that feed the public site.
+Source dataset and helpers for the public funds overview site.
 
 | What | Where | Git |
 |------|--------|-----|
 | Programme CSV (source of truth) | `funds with KU support - v4.csv` | **this repo** |
-| Build / clean scripts | `build_funds_v4.py`, `dedupe_copy.py` | **this repo** |
+| Active helpers | `scripts/` | **this repo** |
+| User inputs & older versions | `old data/` | archive locally; large/scratch files gitignored |
 | Public website | `funds-overview-site/` | [**funds-overview**](https://github.com/KU-lighthouse-funds/funds-overview) (separate repo) |
 
-## Why two repos?
+## Layout
 
-- **This repo** — change management for the spreadsheet data and how it is built. Who changed which programme, when, and why.
-- **Site repo** — HTML/CSS/JS and the generated `programmes.json` that GitHub Pages serves.
-
-Both should be committed when you publish an update.
+```
+Funds/
+  funds with KU support - v4.csv   ← edit this
+  funds with KU support - v4.xlsx
+  README.md
+  FUTURES.md
+  sync_and_publish.ps1
+  scripts/                         ← build / audit / one-off tools
+  old data/                        ← decks, PDFs, Word comments, v1–v3, extracts
+  funds-overview-site/             ← separate git repo (site)
+```
 
 ## Day-to-day workflow
 
-1. Edit **`funds with KU support - v4.csv`** (or run `build_funds_v4.py` if you are applying structured updates).
-2. Optional: remove duplicate sentences — `python dedupe_copy.py`
-3. Push data to the site:
+1. Edit **`funds with KU support - v4.csv`**
+2. Optional: `python scripts/dedupe_copy.py`
+3. Sync the site JSON:
    ```powershell
    cd funds-overview-site
    python sync_data.py
    ```
-4. Commit **this repo** (CSV + scripts).
-5. Commit **site repo** (`data/programmes.json` and any UI changes), then push — that updates the live site.
+   Or from repo root: `.\sync_and_publish.ps1`
+4. Commit **this repo** (CSV).
+5. Commit **site repo** (`data/programmes.json`), then push for live Pages.
 
-## Reference files (local, not in git)
+## Futures / backlog
 
-- `KU LH preaward funding support-AZ-JSJ.pptx` — programme source deck
-- `brand directions.pptx` — KU INNO design guide
-- Older `v1`–`v3` CSV/XLSX — kept on disk only unless you choose to archive them
+See **[FUTURES.md](FUTURES.md)** for deferred items.
