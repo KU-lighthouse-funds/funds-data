@@ -1,4 +1,4 @@
-# KU Lighthouse — Funding data
+# UCPH Lighthouse — Funding data
 
 Source dataset and helpers for the public funds overview site.
 

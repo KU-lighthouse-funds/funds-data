@@ -1,9 +1,9 @@
-# Futures list — KU Lighthouse funding overview
+# Futures list — UCPH Lighthouse funding overview
 
 Tracked ideas and follow-ups that are **not** in scope right now.  
 Revisit when there is a clear user need or measured problem — not for speculative polish.
 
-Last updated: 2026-08-05
+Last updated: 2026-09-06
 
 ---
 
@@ -19,6 +19,20 @@ These were considered during the Aug 2025 load work and **left undone** because 
 | **Remove Open Sans preload** | Font is ~29 KB (trimmed axis); `font-display: swap` already avoids blocking text. | Repeat measurements show font still wins the network race on slow connections. |
 
 **Rule of thumb:** if the site feels slow again, **measure first** (Network tab, resource priority). The Aug fix was fetch priority, not byte-shaving.
+
+---
+
+## Site — annual funding wheel (explored, not pursued)
+
+A circular **annual planning wheel** (funds + events on concentric tracks / month wedges) was prototyped locally in HTML several times in Sep 2026 and **removed**. Not shipped to the live site.
+
+| Outcome | Notes |
+|---------|--------|
+| **Deferred / unlikely to retry** | User preference: do not pursue this format. |
+| **Why it failed** | Full catalogue density (especially Mar/Sep) does not fit readable in-box labels on a static circle without a sidebar, legend, or heavy merging. Multiple layout approaches were tried (per-programme tracks, month wedges, quarter arcs, ~8-box planning poster). |
+| **If ever revisited** | Only with a **narrow scope** (headline windows only, not full CSV), or a **different medium** (designed slide/Illustrator asset), or explicit acceptance of a companion list — not another open-ended HTML wheel iteration. |
+
+Local prototype file `annual-wheel.html` was deleted; nothing was committed to `funds-overview`.
 
 ---
 
@@ -38,5 +52,5 @@ These were considered during the Aug 2025 load work and **left undone** because 
 - Stale-while-revalidate programme cache (`shared.js`)
 - Hero/logo/font payload reduction; data preloaded above decoration
 - Logos → palette-reduced WebP; font weight axis trimmed to 400–700
-- Multi-stage tags + default sort (KU-supported first)
+- Multi-stage tags + default sort (UCPH-supported first)
 - Mobile results card layout
