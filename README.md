@@ -6,7 +6,7 @@ Source dataset and helpers for the public funds overview site.
 |------|--------|-----|
 | Programme CSV (source of truth) | `funds with KU support - v4.csv` | **this repo** |
 | Active helpers | `scripts/` | **this repo** |
-| User inputs & older versions | `old data/` | archive locally; large/scratch files gitignored |
+| User inputs, older versions, brand guide | `old data/` | local only (gitignored) |
 | Public website | `funds-overview-site/` | [**funds-overview**](https://github.com/KU-lighthouse-funds/funds-overview) (separate repo) |
 
 ## Layout

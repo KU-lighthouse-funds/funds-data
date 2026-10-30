@@ -7,18 +7,8 @@ __pycache__/
 .venv/
 venv/
 
-# Local brand / scratch
+# Local only: older versions, decks, brand guide, extracts, screenshots
 _brand/
-
-# Large extracts and screenshots live under old data/ (keep local, don't commit bulk)
-old data/_ppt_extract.txt
-old data/_ppt_clean.txt
-old data/_ppt_programmes.json
-old data/link_check_*.json
-old data/*.png
-old data/chk-*.png
-old data/v-*.png
-old data/shot-*.png
-old data/ours-*.png
+old data/
 
 COMMIT_MSG.tmp
