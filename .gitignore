@@ -12,3 +12,6 @@ _brand/
 old data/
 
 COMMIT_MSG.tmp
+
+# Local agent notes — not part of the public catalogue
+.cursor/
